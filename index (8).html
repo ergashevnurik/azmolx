@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style type="text/css">
+        @media(max-width:1024px) {
+    .child{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 10px;  
+    }
+    .parent{
+         display: flex;
+         flex-wrap: wrap;
+    }
+      
+        .navbarnav {
+        width: 1000px!important;
+      }
+      
+      .navbarul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      
+      i {
+        margin: 0px!important;
+      }
+      .navbarli {
+        padding: 5px!important;
+      }
+      
+      
+      li:first-child {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px!important;
+      }
+      .navli {
+        margin-left: auto;
+      }
+      
+      ul {
+        padding: 0px!important;
+        margin: 0px!important;
+        display: flex;
+        justify-content: flex-start!important;
+      }
+      
+      nav {
+        padding: 0px!important;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pod {
+      display: none;
+      }
+      .pfooter {
+        flex-wrap: wrap;
+      }
+    .imgd, .imig, .imgid{
+        margin: auto;
+        margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+    .imgd{
+        margin-top: 10px;
+    }
+    .h1_sec{
+        margin-top: 40px;
+    }
+    .parenti{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .childi{
+        height: 250px;
+        width: 900px;
+        margin-bottom: 10px;  
+    }
+    .h3soz{
+        margin-bottom: 40px;
+        margin-top: 1px;
+    }
+    .abot{
+        display: flex;
+        width: 100%;
+         flex-direction: column;
+        margin-left: 4px;
+        
+        
+    }
+    .bondl img{
+        width: 500px;
+        height: 400px;
+         
+         
+    }
+    .bondl_1{
+        border-radius: 10px;
+        box-shadow: 3px 4px 5px #888888;
+    }
+    .bondl{
+        width: 1000px;
+        height: 350px; 
+        border-radius: 10px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px 4px 5px #888888;
+    }
+    .h3{
+        margin-bottom: 2.5rem;
+    }
+    .ga{
+        width: 1000px;
+        overflow: scroll;
+        margin-left: 8px;
+    }
+    .parent_sec{
+        height: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .child_sec_1{
+        width: 100% !important;
+        height: 100% !important;
+        flex-wrap: wrap;
+    }
+    .child_sec_1::after{
+        top: -80px;
+        bottom: -80px;
+         
+    }
+    .imgid{
+        padding-bottom: 10px;
+    }
+    .ul_foo {
+        margin-top: 5px;
+    }
+    .child_sec_2{
+        width: 100% !important;
+        height: 100% !important; 
+        padding-bottom: 40px;
+    }  
+    .child_sec_1{
+       height: 1000px !important;
+        width: 1000px !important; 
+      
+    }
+     
+
+    body {
+        overflow-x: hidden;
+    }
+     
+    .imag{
+     width: 100%;
+    }
+
+    .bondl_1, .bondl, .ga {
+        width: 100%;
+    }
+
+    .ga ul, .uli, .time {
+        flex-wrap: wrap;
+    }
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background: #f2f4f5;
+  }
+  .navbarnav {
+    background-color: #002f34;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  .navbarul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1174px;
+    margin: auto;
+  }
+  .navbarli {
+    list-style: none;
+    padding: 14px
+  }
+  .navbara {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+  }
+  .navbara:hover {
+    color: #7f9799;
+  }
+  .navlogo {
+    width: 90px;
+    height: 80px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  li:first-child {
+    padding: 0px;
+    margin-right: auto;
+  }
+  #icon {
+    padding-right: 7px;
+  }
+  #icon:hover {
+    color: #7f9799;
+  }
+  .pod {
+    border: 4px solid white;
+    color: #002f34;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  ul {
+     list-style: none;
+  }
+  .pod:hover {
+    background: #002f34;
+    color: white;
+  }
+  .navlip {
+    cursor: default;
+    color: #7f9799;
+  }
+header{
+  overflow: hidden;
+}
+.h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 40px;
+    text-align: center;
+    font-family:  'Segoe UI', Tahoma,  Verdana, sans-serif;
+}
+.parent{
+  
+    display: flex;
+    justify-content: space-around;
+}
+.parenti{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.child{
+    height: 220px;
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;   
+}
+.childi{
+    height: 220px;
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;     
+}   
+.img{
+    margin-left: 40px;
+}
+.imgd{  
+    margin-bottom: 20px;
+    margin-top:  45px;
+    margin-left: 105px;
+}
+.imig{
+    margin-top:  25px;
+    margin-left: 95px;
+}
+.imgid{
+    margin-top:  45px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+.h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.h_4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p{
+    text-align: center;
+    margin: 24px 0 0;
+    color: #406367;
+    line-height: 1.29;
+    font-size: 14px;
+}
+.h3{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+.spa{
+    min-width: 96px;
+    height: 24px;
+    border-radius: 2px;
+    background: #23e5db;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.pi{
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px auto 40px;
+    width: 100%;
+}
+.h_1{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.06;
+    text-align: center;
+    margin-top: 20px;
+}
+.soz{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 18px;
+    color: #3a77ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.soz strong{
+    font-weight: 500;   
+}
+.co{
+    display: flex;
+ 
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+    margin-top: 9px;
+    fill: #23e5db;
+}
+.sozla{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.soz_2{
+    color: gray;
+}
+.h3soz{
+    margin-bottom: 80px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.08;
+    margin: 24px auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.abot{
+    display: flex;
+    width: 1250px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.bondl_1{
+    width: 1000px;
+    padding: 70px;
+    background: #fff;
+}
+.bondl_1 h4{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.06;
+    margin-bottom: 37px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bondl_1 p:first-of-type{
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.33;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pik{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.img{
+    background-image: url(ilu-home.svg);
+}
+.bondl{
+     width: 900px;
+    background-color: #e8e9e9;
+}
+.bondl img{
+    margin-top: 80px;
+    margin-left: -15px;
+}
+.ga{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid darkgrey; 
+}
+.gap{
+   display: flex;
+}
+.gap li{
+    position: relative;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.ali_1{
+    transform: translateX(40px);
+}
+.ali_2{
+    transform: translateX(130px);  
+}
+.ali_3{
+    transform: translateX(200px);  
+}
+ 
+.cizu{
+    z-index: 999;
+    border-top: 1px solid #7f9799;
+    margin-bottom: 65px;
+    margin-top: 20px;
+} 
+.uli{
+    display: flex;
+    padding: 0 30px 30px 90px;
+}
+.p8{
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    transform: translateX(160px);
+    margin-bottom: 10px;
+     
+}
+.icon_1{
+     margin-right: 15px;      
+}
+.gr{
+    margin-top: 60px;
+    margin-left: -280px;
+}
+.gr p{
+    font-size: 13px;
+}
+.container_sec{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:45px;
+}
+.parent_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1270px;
+    background-color: #fff;
+    
+}
+.child_sec_1{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+   
+}
+.child_sec_1:hover{
+    background-color: #ceddff;
+    transition: all .6s ease;
+}
+.child_sec_1::after{
+    content: "";
+    position: absolute;
+    border: 100px solid #1982c4;
+    border-radius: 50%;
+    transform: scale(0);
+     top: -60px;
+     bottom: -60px;
+     left: -15px;
+     right:-15px;
+     z-index: 1;
+}
+.child_sec_1:hover::after{
+    transform: scale(1);
+    transition: all .6s ease;
+}
+
+
+.child_sec_2{
+    z-index: 1;
+    background: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+ 
+.child_sec_2::after {
+    content: ""; 
+    background:  #23e5db !important;
+    transform: scaleX(0) ;
+    margin-left:  auto;
+    margin-right: auto;
+    width: 110px;
+    height: 900px;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+    transition: all .6s ease;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.child_sec_2:hover::after{
+    transform: scaleX(1)  ;
+    transform: rotate(50deg);
+}
+.child_sec_2::before{
+    content: ""; 
+    background:  #23e5db !important;
+    font-size: 1285px;
+    transform: scale(0);
+    margin-left:  auto;
+    margin-right: auto;
+    z-index: -1;
+    top: -200px;
+    height: 900px;
+    width: 110px;
+    transition: all .6s ease;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.child_sec_2:hover:before{
+    transform: scale(1);
+     transform: rotate(-50deg);
+}
+.child_sec_2:hover{
+    background-color: #cbf7eeff;
+    transition: all .6s ease;
+    
+}
+.button{
+    text-align: center !important;
+    padding: 12px 40px !important;
+    background-color: #2b2d42 !important;
+    margin-top: 20px !important;
+    color: white !important;
+    border-radius: 4px !important;
+    z-index: 999 !important;
+    border: 3px solid #2b2d42 !important;
+    transition: all .4s ease !important;
+}
+.button:hover{    
+    background-color: transparent !important;
+    color: #2b2d42 !important;
+    transition: all .4s ease  !important;
+}
+.button_1{
+    text-align: center;
+    padding: 12px 40px;
+    background-color: transparent;
+    margin-top: 20px;
+    color: #2b2d42;
+    border-radius: 4px;
+    border: 2px solid #2b2d42;
+    transition: all .4s ease; 
+    z-index: 999;
+}
+.h1_sec{
+     font-size: 30px;
+     text-align: center;
+     margin-top: 200px;
+     z-index: 990;
+     color: #184e77;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.dowload {
+    text-align: center;
+    margin-left: 50px;
+   }
+   .afooter {
+   text-decoration: none;
+    color: black;
+   }
+   .bfooter {
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 10px;
+   }
+   .pfooter {
+    display: flex;
+  
+   }
+   .imga {
+    margin-right: 10px;
+   }
+   .footerp {
+    text-align: center;
+    color: #8E8E8E;
+   }
+
+.active {
+    position: relative;
+}
+
+.active:before {
+    z-index: 99;
+    content: '';
+    position: absolute;
+    top: -31px;
+    left: 0;
+    border-top: 2px solid  #2b2d42;
+    height: 8px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbarnav">
+        <ul class="navbarul">
+          <li class="navbarli">
+            <a href="" class="navbara">
+              <img src="https://static.olx.uz/static/olxuz/naspersclassifieds-regional/olxeu-atlas-web-olxuz/static/img/fb/fb-image_redesign.png?t=22-06-07" class="navlogo">
+            </a>
+          </li>
+          <li class="navbarli">
+            <a href="" class="navbara">
+              O'Z
+            </a>
+          </li>
+          <li class="navbarli">
+            <p class="navlip">|</p>
+          </li>
+          <li class="navbarli">
+            <a href="" class="navbara">РУ</a>
+          </li>
+          <li class="navbarli">
+            <a href="" class="navbara">
+            <i id="icon" class="fa fa-cloud heart"></i>
+              Сообщения</a>
+          </li>
+          <li class="navbarli">
+            <a href="" class="navbara asa">
+              <i  id="icon" class="fa fa-heart"></i>
+            </a>
+          </li>
+          <li class="navbarli" id="navli">
+            <a href="" class="navbara" id="navbara1">
+              <i  id="icon" class="fa fa-user"></i>
+                Мой профиль
+            </a>
+          </li>
+          <li class="navbarli1">
+            <a href="" class="pod">Подать объявление</a>
+          </li>
+        </ul>
+      </nav>
+    <header>
+        <div class="headr">
+            <img src="Снимок.PNG" alt="" class="imag">
+        </div>
+    </header>
+      <section>
+        <div class="container">
+            <h3 class="h3" >Вам доступны такие услуги:</h3>
+            <div class="parent">
+                <div class="child">
+                    <div class="imgd"><img src="no-ads.svg" alt="" class="img"></div>
+                    <h4 class="h4">Поднятие </h4>
+                </div>
+                <div class="child"><div class="imig"><img src="vas-promotion-on-the-top.svg" alt="" class="img"></div>
+                    <h4 class="h_4">Размещение в ТОП </h4>
+                </div>
+                <div class="child"><div class="imgid"><img src="house.svg" alt="" class="img">
+                </div> <h4 class="h-4">VIP-объявление </h4>
+                </div>
+            </div>
+        </div>
+        <p class="p">(размещение на главной странице) Вы можете заказать каждую услугу отдельно или выбрать подходящий набор из нескольких услуг!</p>
+        <h3 class="h3">Наборы платных услуг <span class="spa">новинка!</span></h3>
+        <p class="pi">Теперь вам не нужно задумываться, какая услуга сработает лучше для вашего объявления. <br> Нужно только решить, насколько заметным вы хотите его сделать и как быстро желаете <br> заключить сделку!</p>
+      </section>
+       <section>
+        <div class="container">
+            <div class="parenti">
+                <div class="childi"> 
+                    <h4 class="h_1">Легкий старт</h4>
+                     <div class="soz"><strong>4x</strong> больше просмотров</div>
+                     <div class="divc">
+                     <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla">Топ-объявление на <strong>3</strong> дней</div>
+                    </div>  
+                    <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla soz_2" >Поднятие в верх списка</div>
+                    </div>
+                    <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla soz_2">VIP-объявление</div>
+                    </div>  
+                    </div>
+                </div>
+                <div class="childi"><h4 class="h_1">Быстрая продажа</h4>
+                    <div class="soz"><strong>16x</strong> больше просмотров</div>
+                    <div class="divc">
+                        <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla">Топ-объявление на <strong>7</strong> дней</div>
+                       </div>  
+                       <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla soz_2" >3 поднятия в верх списка</div>
+                       </div>
+                       <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla soz_2">VIP-объявление</div>
+                       </div>  
+                       </div>
+                </div>
+                <div class="childi"><h4 class="h_1">Турбо продажа</h4>
+                    <div class="soz"><strong>30x</strong> больше просмотров</div>
+                    <div class="divc">
+                        <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla">Топ-объявление на <strong>30</strong> дней</div>
+                       </div>  
+                       <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla" > 9 Поднятие в верх списка</div>
+                       </div>
+                       <div class="co"> <div class="ico"><svg class="icon" version="1.1" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 12" xml:space="preserve"><path d="M1.5,4.3l5.1,5.1l9.3-9.3l1.2,1.2L6.6,11.9L0.2,5.5L1.5,4.3z"></path></svg></div> <div class="sozla">VIP-объявление  на 7 дней</div>
+                       </div>  
+                       </div>
+                </div>
+            </div>
+        </div>
+         <h3 class="h3soz">Узнайте как работают платные услуги</h3>
+       </section>
+       <section>
+        <div class="containerii">
+                <div class="abot" id="section">
+                <div class="bondl_1">
+                    <h4>VIP-объявление</h4>
+                    <p>Если вы хотите разместить объявление на ниболее премиумной позиции и получить наибольшее количество откликов, тогда VIP-объявление - именно та услуга, которая вам нужна. Это самый лучший способ ускорить совершение сделки - ведь ваше объявление будет размещено на главной странице OLX!</p>
+                    <p class="pik">На главной странице размещаются все объявления, которые рекламируются с помощью пакета "Турбо продажа", но благодаря тому, что OLX посещают миллионы пользователей, ваше предложение получит в 10 раз больше откликов, чем объявление без рекламы.</p>
+                </div>
+                <div class="bondl">
+                    <img src="ilu-home.svg" alt="" >
+                </div>
+            </div>
+        </div>
+       </section>
+       <section>
+        <div class="containers">
+            <div class="ga">
+                <ul class="gap">
+                    <li class="ali ali_1">
+                        <a href="#section"  style="list-style: none; color:  darkslategrey; text-decoration: none;">
+                            <p>Поднятие</p>
+                        </a>                        
+                    </li>
+                    <li class="ali ali_2">
+                        <a href="#section"  style="list-style: none; color: darkslategrey; text-decoration: none;">
+                            <p  >Размещение в ТОП</p>   
+                        </a>
+                    </li>
+                    <li class="ali ali_3">
+                        <a href="#section"  style="list-style: none; color:  darkslategrey ; text-decoration: none;">
+                         <p  >VIP-объявление</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </section>
+       <section>
+        <div class="container_sec">
+            <div class="parent_sec">
+                <div class="child_sec_1">
+                    <h1 class="h1_sec">Разместить и <br> рекламировать новое <br> объявление</h1>
+                    <button class="button">  Разместить <br> объявление</button>
+                </div>
+                <div class="child_sec_2">
+                    <h1 class="h1_sec">Рекламировать <br> существующее <br> объявление </h1>
+                    <button class="button_1">Перейти в Мой <br> профиль</button>
+                </div>
+            </div>
+        </div>
+       </section>
+       <div class="cizu"></div>
+       <br>
+       <br>
+       <footer class="footer">
+         <div class="pfooter">
+           <div class="bfooter">
+           <a href="" class="afooter">Мобильные приложения</a>
+           <br>
+           <a href="" class="afooter">Помощь</a>
+           <br>
+           <a href="" class="afooter">Платные услуги</a>
+           <br>
+           <a href="" class="afooter">Бизнес на OLX</a>
+           <br>
+           <a href="" class="afooter">Реклама на сайте</a>
+           <br>
+           <a href="" class="afooter">Условия использования</a>
+           <br>
+           <a href="" class="afooter">Политика конфиденциальности</a>
+           <br>
+           <a href="" class="afooter">Партнёры</a>
+           </div>
+           <div class="bfooter">
+             <a href="" class="afooter">Как продовать и покупать?</a>
+             <br>
+             <a href="" class="afooter">Правила безопасности</a>
+             <br>
+             <a href="" class="afooter">Карта сайта</a>
+             <br>
+             <a href="" class="afooter">Карта регионов</a>
+             <br>
+             <a href="" class="afooter">Карьера в OLX</a>
+             <br>
+             <a href="" class="afooter">Обратная связь</a>
+           </div>
+             <div class="dowload">
+               <div class="dowloaddiv">
+           <a href="" class="imga">
+           <img src="https://static.olx.uz/static/olxuz/packed/font/2fc9f37e6707acfc0e1255cec57c49a986.svg">
+           </a>
+           <a href="">
+           <img src="https://static.olx.uz/static/olxuz/packed/font/2fccd2faa9395d5faed1011516c64dc929.svg">
+           </a>
+           </div>
+           <p class="footerp">Бесплатное приложение для твоего телефона</p>
+         </div>
+         </div>
+       </footer>
+    <!--  <footer>
+        <div class="uli">
+            <div class="lu">
+            <p class="p8">Мобильные приложения</p>
+            <p class="p8">Помощь</p>
+            <p class="p8">Платные услуги</p>
+            <p class="p8">Бизнес на OLX</p>
+            <p class="p8">Реклама на сайте</p>
+            <p class="p8">Условия использования</p>
+            <p class="p8">Политика конфиденциальности</p>
+            <p class="p8">Партнёры</p>
+         </div>
+         <div class="lu ul_foo">
+            <p class="p8">Как продавать и покупать?</p>
+            <p class="p8">Правила безопасности</p>
+            <p class="p8">Карта сайта</p>
+            <p class="p8">Карта регионов</p>
+            <p class="p8">Карьера в OLX</p>
+            <p class="p8">Обратная связь</p>
+         </div>
+        <div class="time">
+            <div class="icon_1">
+                <img src="img/2fc9f37e6707acfc0e1255cec57c49a986.svg" alt="">
+             </div>
+             <div class="icon_2">
+                <img src="img/apple.svg" alt="">
+             </div>
+             <div class="gr">
+                <p>Бесплатное приложение для твоего телефона</p>
+            </div>
+        </div>
+        </div>
+    </footer>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="script.js">
+    const ali1 = document.querySelector('.ali_1')
+ali1.onclick = function() {
+    ali2.classList.remove('active');
+    ali3.classList.remove('active');
+    ali1.classList.add('active');
+    
+}
+
+
+const ali2 = document.querySelector('.ali_2')
+ali2.onclick = function() {
+    ali1.classList.remove('active');
+    ali3.classList.remove('active');
+    ali2.classList.add('active');
+}
+
+
+const ali3 = document.querySelector('.ali_3')
+ali3.onclick = function() {
+    ali2.classList.remove('active');
+    ali1.classList.remove('active');
+    ali3.classList.add('active');
+}
+</script>
+</body>
+</html>  
